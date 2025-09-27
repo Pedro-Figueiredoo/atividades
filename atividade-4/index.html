@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Buscador de CEP</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        label { display: block; margin-top: 10px; }
+        input { margin-bottom: 10px; width: 300px; padding: 5px; }
+        button { padding: 8px 16px; }
+        .result { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Buscador de CEP (ViaCEP)</h1>
+    <label for="cep">CEP:</label>
+    <input type="text" id="cep" maxlength="9" placeholder="Digite o CEP">
+    <button id="buscar">Buscar</button>
+    <div class="result">
+        <label for="logradouro">Logradouro:</label>
+        <input type="text" id="logradouro" readonly>
+        <label for="bairro">Bairro:</label>
+        <input type="text" id="bairro" readonly>
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" readonly>
+        <label for="uf">UF:</label>
+        <input type="text" id="uf" readonly>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
